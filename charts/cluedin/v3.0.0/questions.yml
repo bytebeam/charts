@@ -1,0 +1,23 @@
+labels:
+  io.cattle.role: cluster # options are cluster/project
+rancher_min_version: 2.4.0
+questions:
+#image configurations
+- variable: defaultImage
+  default: true
+  description: "Use default CluedIn image or specify a custom one"
+  label: Use Default CluedIn Image
+  type: boolean
+  show_subquestion_if: false
+  group: "Container Images"
+  subquestions:
+  - variable: agents.image.repository
+    default: "ranchercharts/datadog-agent"
+    description: "CluedIn image name"
+    type: string
+    label: CluedIn Image Name
+  - variable: agents.image.tag
+    default: "3.0.0"
+    description: "CluedIn Image Tag"
+    type: string
+    label: CluedIn Image Tag

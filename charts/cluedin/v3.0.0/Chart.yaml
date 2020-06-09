@@ -1,0 +1,17 @@
+apiVersion: v2 
+name: cluedin
+version: 1.0.0
+appVersion: 3.0.0
+description: A data fabric for all your needs.
+icon: file://../cluedinlogo.png
+keywords:
+- cluedin
+- datafabric
+- dotnet
+home: https://www.cluedin.com/
+sources:
+- https://github.com/cluedin-io
+maintainers:
+- name: Stephen Pope
+  email: stp@cluedin.com
+
